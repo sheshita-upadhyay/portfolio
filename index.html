@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sheshita's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ===== Navigation ===== -->
+  <header>
+    <nav class="navbar">
+      <h2 class="logo">Sheshita's Portfolio</h2>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Home Section ===== -->
+  <section id="home">
+    <div class="home-container">
+      <div class="profile-pic">
+        <img src="sheshita img.jpeg" alt="Sheshita Photo">
+      </div>
+      <h1>Hi, I’m <span class="highlight">Sheshita Upadhyay</span></h1>
+      <p class="tagline"><span id="typing"></span></p>
+      <div class="buttons">
+        <a href="SheshitaCV.pdf" target="_blank" class="btn">Download CV</a>
+        <a href="https://www.linkedin.com/in/sheshita-upadhyay/" target="_blank" class="btn">Hire Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-left reveal">
+        <p class="about-tagline">Aspiring Developer & Tester|Passionate About Building and Testing Quality Software"</p>
+      </div>
+      <div class="about-right reveal">
+        <p><strong>Name:</strong> Sheshita Upadhyay</p>
+        <p><strong>College:</strong> ISBM University</p>
+        <p><strong>Course:</strong> B.Sc. Computer Science</p>
+        <p><strong>Age:</strong> 21</p>
+        <p><strong>Email:</strong> sheshitaupadhyay047@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills">
+    <h2 class="reveal">Skills</h2>
+    <div class="skills-container">
+      <div class="skill reveal">
+        <h3>Programming</h3>
+        <p> C,C++ <span>80%</span></p>
+        <p>Java <span>60%</span></p>
+        <p>HTML/CSS/JavaScript <span>75%</span></p>
+      </div>
+     
+      <div class="skill reveal">
+        <h3>Database&Tools</h3>
+        <p>PostgreSQL <span>70%</span></p>
+        <p>Excel <span>60%</span></p>
+        <p>Jira <span>60%</span></p>
+          <p>Git/GitHub <span>60%</span></p>
+  <p>Prompt Engineering & AI Tools <span>70%</span></p>
+      </div>
+
+    <div class="skill reveal">
+  <h3>Testing</h3>
+  <p>Manual Testing <span>80%</span></p>
+  <p>SDLC, STLC, Defect Tracking, Bug Report <span>80%</span></p>
+  <p>API (Postman) <span>80%</span></p>
+</div>
+
+
+  
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+<section id="projects">
+  <h2 class="reveal">Projects</h2>
+  <div class="projects-container reveal">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <h3>AmazonClone</h3>
+      <p>A responsive full-stack e-commerce website replicating Amazon.</p>
+      <a href="https://github.com/sheshita-upadhyay/Amazon-Clone" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <h3>Calculator App</h3>
+      <p>Brief description of Project 2.</p>
+      <a href="https://github.com/sheshita-upadhyay/calculator" target="_blank" class="btn">View on GitHub</a>
+    </div>
+<div class="project-card">
+      <h3>C++ Tic-Tac-Toe</h3>
+      <p>Brief description of Project 2.</p>
+      <a href="https://github.com/sheshita-upadhyay/C-Tic-Tac-Toe" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Leave Management System</h3>
+      <p>Brief description of Project 2.</p>
+      <a href="https://github.com/sheshita-upadhyay/Postman-API-Testing-Project" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+     <div class="project-card">
+      <h3>analog-clock</h3>
+      <p>Brief description of Project 2.</p>
+      <a href="https://github.com/sheshita-upadhyay/analog-clock/upload" target="_blank" class="btn">View on GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- ===== Certificates Section ===== -->
+  <section id="certificates">
+    <h2 class="reveal">Certificates</h2>
+    <div class="cert-container">
+      <div class="cert-card reveal">
+        <img src="Walmart cert.jpeg" alt="Certificate 1" onclick="openCert(this.src)">
+      </div>
+      <div class="cert-card reveal">
+        <img src="deloitte cert.PNG" alt="Certificate 2" onclick="openCert(this.src)">
+      </div>
+      <div class="cert-card reveal">
+        <img src="genai cert.PNG" alt="Certificate 3" onclick="openCert(this.src)">
+      </div>
+      <div class="cert-card reveal">
+        <img src="ui cert.png" alt="Certificate 3" onclick="openCert(this.src)">
+      </div>
+      <div class="cert-card reveal">
+        <img src="web pg.png" alt="Certificate 3" onclick="openCert(this.src)">
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="certModal" onclick="closeCert()">
+    <img id="modalImg" src="">
+  </div>
+
+<!-- ===== Contact Section ===== -->
+<section id="contact">
+  <h2 class="reveal">Contact Me</h2>
+  <p class="reveal"><strong>Phone:</strong> +91-9096534935</p>
+  <div class="contact-icons reveal">
+    <a href="https://www.instagram.com/sheshita_upadhyay/" target="_blank" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+    </a>
+    <a href="https://www.linkedin.com/in/sheshita-upadhyay/" target="_blank" title="LinkedIn">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/sheshita-upadhyay" target="_blank" title="GitHub">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+    </a>
+    <a href="mailto:sheshitaupadhyay047@gmail.com" title="Email">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" />
+    </a>
+  </div>
+</section>
+
+ 
+
+  <footer>
+    <p>Created by Sheshita Upadhyay</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
